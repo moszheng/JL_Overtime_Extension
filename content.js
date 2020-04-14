@@ -1,5 +1,6 @@
 console.log("內插腳本載入"); //id=col-xs-24 ico ico-clock -time
-
+//button id= btn btn-white btn-lg btn-block
+//$(".btn.btn-white.btn-lg.btn-block").get(0).click();
 $(".col-xs-24.ico.ico-clock.-time").each(function(index){
     
     var str=$(this).text();
