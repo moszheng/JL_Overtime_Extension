@@ -5,3 +5,59 @@
     padding: 1px 0px;
     background-color:rgb(236, 236, 236);
 }
+.PRO-header .PRO-logo:before{
+    background: no-repeat center center url(icon.png) !important;
+    
+}
+.PRO-header .PRO-logo:after {
+    content: '幹拎老師' !important;
+}
+
+.PSC-header { /*頂部橫條*/
+
+    color: #000 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+    height: 60px !important;
+
+}
+.PSC-wrapper {
+    
+    padding: 5px 10px !important;
+}
+
+.PSC-HomeWidget .-body { /*區塊們*/
+    border: 0px !important;
+    padding: 2px !important;
+    
+}
+
+body{
+
+    /*background-color: #000 !important;*/
+}
+.btn-default { /*右側按鈕*/
+    
+    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+    background-repeat: repeat-x;
+    border-color: #dbdbdb;
+    text-shadow: 0 1px 0 #fff;
+    border-color: #ccc;
+}
+.rbc-month-view {
+    border: 0;
+    border-bottom: 0px solid #aaa !important;
+}
+
+.rbc-calendar.clockin .-toolbar>.--dateTitle { /*月份*/
+    padding-right: 20px !important;
+}
+
+.notice { /*未簽核表單*/
+    
+    background-color: rgb(231, 231, 231) !important;
+    border: 0px !important;
+    
+}

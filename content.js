@@ -1,6 +1,9 @@
 console.log("內插腳本載入"); //id=col-xs-24 ico ico-clock -time
 //button id= btn btn-white btn-lg btn-block
 //$(".btn.btn-white.btn-lg.btn-block").get(0).click();
+
+//sidebar class=col-md-8 col-sm-6
+
 $(".col-xs-24.ico.ico-clock.-time").each(function(index){
     
     var str=$(this).text();
@@ -12,8 +15,8 @@ $(".col-xs-24.ico.ico-clock.-time").each(function(index){
     var endmin=parseInt(num[3]);
     var rod=0;
 
-    if (num[2] != null){ 
-
+    if (num[2] != null)
+    { 
         var min = endmin - startmin;
 					
 	    if(min<0) //進位
@@ -44,8 +47,11 @@ $(".col-xs-24.ico.ico-clock.-time").each(function(index){
             $("#date"+index).css('color', 'blue');
         }
     }
-
-    else{
+    else
+    {
         return;
     }
 });
+
+$(".col-md-8.col-sm-6").append('<div class="overtimeBar"></div>');
+
