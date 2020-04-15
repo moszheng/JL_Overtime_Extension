@@ -1,12 +1,16 @@
-.overtime{
+.overtime{ /*新增的加班資訊*/
     text-align: center; 
     border-radius: 8px;
     margin: 3px auto;
     padding: 1px 0px;
     background-color:rgb(236, 236, 236);
 }
+body{
+    /*background-color: #000 !important;*/
+}
+
 .PRO-header .PRO-logo:before{
-    background: no-repeat center center url(icon.png) !important;
+    background: no-repeat center center url('chrome-extension://__MSG_@@extension_id__/icon.png') !important;
     
 }
 .PRO-header .PRO-logo:after {
@@ -16,7 +20,7 @@
 .PSC-header { /*頂部橫條*/
 
     color: #000 !important;
-    background-color: transparent !important;
+    background-color: #fff !important;
     box-shadow: none !important;
     border-top: 0px !important;
     border-bottom: 0px !important;
@@ -24,20 +28,15 @@
 
 }
 .PSC-wrapper {
-    
     padding: 5px 10px !important;
 }
 
 .PSC-HomeWidget .-body { /*區塊們*/
     border: 0px !important;
     padding: 2px !important;
-    
 }
 
-body{
 
-    /*background-color: #000 !important;*/
-}
 .btn-default { /*右側按鈕*/
     
     background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
@@ -46,13 +45,35 @@ body{
     text-shadow: 0 1px 0 #fff;
     border-color: #ccc;
 }
+
+.rbc-month-header { /*星期*/
+    margin: 15px 0px;
+}
+.rbc-calendar.clockin .rbc-month-header .rbc-header {
+    text-align: center !important;
+}
+
 .rbc-month-view {
     border: 0;
     border-bottom: 0px solid #aaa !important;
 }
+.rbc-calendar.clockin .rbc-row-bg{ /*日曆框*/
+    border-top: 0px solid #aaa !important;
+    border-left: 0px solid #aaa !important;
+    border-right: 0px solid #aaa !important;
+}
+
+.rbc-calendar.clockin .rbc-month-row:nth-child(2) .rbc-row-bg{   
+    border-left: 0px solid #aaa !important;
+    border-right: 0px solid #aaa !important;
+}
+
 
 .rbc-calendar.clockin .-toolbar>.--dateTitle { /*月份*/
     padding-right: 20px !important;
+}
+.rbc-day-bg+.rbc-day-bg {
+    border-left: 0px solid #ddd !important;
 }
 
 .notice { /*未簽核表單*/
@@ -61,3 +82,19 @@ body{
     border: 0px !important;
     
 }
+
+.PSC-HomeWidget.app{
+    display: none;
+}
+.-lunar{
+    display: none;
+}
+.rbc-calendar.clockin .-dayBg>.--dayName{
+    display: none;
+}
+.PSC-GlobalSearch.ico.ico-search{
+    display: none;
+}
+.-title.hidden-xs{
+    display: none !important;
+} 
