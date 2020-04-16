@@ -4,9 +4,9 @@
     "version": "0.9",
     "description": "計算104工時的貼心好夥伴",
     "icons": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
+      "16": "image/icon.png",
+      "48": "image/icon.png",
+      "128": "image/icon.png"
     },
     "browser_action": {
       "default_title": "fuck104"
@@ -27,5 +27,10 @@
       "matches" : [ "https://pro.104.com.tw/psc2" ]
       
     }
+    ],
+    
+    "web_accessible_resources": [
+      "image/LOGOB.svg",
+      "image/icon.png"
     ]
 }

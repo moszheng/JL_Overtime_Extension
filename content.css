@@ -5,19 +5,22 @@
     padding: 1px 0px;
     background-color:rgb(236, 236, 236);
 }
-body{
-    /*background-color: #000 !important;*/
-}
 
+.PRO-header { /*Header---------*/
+    border-bottom: 0px solid #ddd !important;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.1) !important;
+}
+.PRO-header .PRO-ico, .PRO-ico {
+    margin-left: 20px !important;
+}
 .PRO-header .PRO-logo:before{
-    background: no-repeat center center url('chrome-extension://__MSG_@@extension_id__/icon.png') !important;
-    
+    background: no-repeat center center url('chrome-extension://__MSG_@@extension_id__/image/LOGOB.svg') !important;
 }
 .PRO-header .PRO-logo:after {
-    content: '幹拎老師' !important;
+    display: none;
 }
 
-.PSC-header { /*頂部橫條*/
+.PSC-header { /*頂部橫條---------------*/
 
     color: #000 !important;
     background-color: #fff !important;
@@ -26,6 +29,10 @@ body{
     border-bottom: 0px !important;
     height: 60px !important;
 
+}
+.PSC-ClockIn{
+    background-image: none !important;
+    background-color: rgb(226, 226, 226) !important;
 }
 .PSC-wrapper {
     padding: 5px 10px !important;
@@ -46,6 +53,7 @@ body{
     border-color: #ccc;
 }
 
+
 .rbc-month-header { /*星期*/
     margin: 15px 0px;
 }
@@ -57,7 +65,7 @@ body{
     border: 0;
     border-bottom: 0px solid #aaa !important;
 }
-.rbc-calendar.clockin .rbc-row-bg{ /*日曆框*/
+.rbc-calendar.clockin .rbc-row-bg{ /*----------------日曆框*/
     border-top: 0px solid #aaa !important;
     border-left: 0px solid #aaa !important;
     border-right: 0px solid #aaa !important;
@@ -75,7 +83,20 @@ body{
 .rbc-day-bg+.rbc-day-bg {
     border-left: 0px solid #ddd !important;
 }
-
+.col-md-8.col-sm-6{ /*sidebar*/
+    margin: 80px 0px 0px 0px;
+}
+.PSC-HomeWidget.clockIn{ /*打卡區塊*/
+    margin: 40px 0px 10px 0px;
+}
+/*.rbc-calendar.clockin .-handle.abnormal {
+    background-color: #d9333f !important;
+}
+.rbc-calendar.clockin .-handle {
+    
+    background-color: #98d98e !important;
+    
+}*/
 .notice { /*未簽核表單*/
     
     background-color: rgb(231, 231, 231) !important;
@@ -86,15 +107,23 @@ body{
 .PSC-HomeWidget.app{
     display: none;
 }
+.PSC-GlobalSearch.ico.ico-search{
+    display: none;
+}
+
 .-lunar{
     display: none;
 }
 .rbc-calendar.clockin .-dayBg>.--dayName{
     display: none;
 }
-.PSC-GlobalSearch.ico.ico-search{
-    display: none;
-}
+
 .-title.hidden-xs{
     display: none !important;
 } 
+#companyName{
+    display: none !important;
+}
+.ico.ico-m4{
+    display: none !important;
+}
