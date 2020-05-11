@@ -1,7 +1,6 @@
 console.log("內插腳本載入"); //id=col-xs-24 ico ico-clock -time
 //button id= btn btn-white btn-lg btn-block
 //$(".btn.btn-white.btn-lg.btn-block").get(0).click();
-
 //sidebar class=col-md-8 col-sm-6
 
 $(".col-xs-24.ico.ico-clock.-time").each(function(index){
@@ -38,7 +37,7 @@ $(".col-xs-24.ico.ico-clock.-time").each(function(index){
                         hour.toLocaleString('en-US', {minimumIntegerDigits:2})+":"+min.toLocaleString('en-US', {minimumIntegerDigits:2})
                      +"</div>");
 
-        if(overtime>30)//case超過加班時數
+        if(overtime>=30)//case超過加班時數
         {
             $("#date"+index).css('color', 'red');
         }
@@ -54,4 +53,3 @@ $(".col-xs-24.ico.ico-clock.-time").each(function(index){
 });
 
 $(".col-md-8.col-sm-6").append('<div class="overtimeBar"></div>');
-
